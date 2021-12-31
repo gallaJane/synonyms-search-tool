@@ -1,7 +1,10 @@
 import { useState } from 'react'
-
-import { Box, Typography, FilledInput, IconButton, useTheme } from '@mui/material'
-import { Search as SearchIcon, Bookmark as BookmarkIcon} from '@mui/icons-material'
+import { Box, Typography, FilledInput,
+    //  IconButton, 
+     useTheme } from '@mui/material'
+import { Search as SearchIcon,
+    //  Bookmark as BookmarkIcon
+    } from '@mui/icons-material'
 import { useHistory } from 'react-router-dom'
 
 import './home.styles.scss'
@@ -16,7 +19,7 @@ const Home = () => {
         event.preventDefault();
         const trimmedWord = word.trim().toLowerCase(); // removes extra spacing
         if(!trimmedWord || trimmedWord.split(' ').length >1) return;
-        history.push(`/search/${word}`);
+        history.push(`/search/${trimmedWord}`);
     }
 
     return (
@@ -50,7 +53,7 @@ const Home = () => {
             />
             </form>
             </Box>
-            <IconButton sx={{
+            {/* <IconButton sx={{
                 borderRadius: 2,
                 p: 2,
                 color: '#fff',
@@ -58,7 +61,7 @@ const Home = () => {
                 boxShadow: '0px 10px 10px rgba(221, 114, 133, 0.2)'
             }}>
                 <BookmarkIcon />
-            </IconButton>
+            </IconButton> */}
         </Box>
     )
 }

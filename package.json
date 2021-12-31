@@ -2,7 +2,6 @@
   "name": "synonyms-search-tool",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://gallaJane.github.io/synonyms-search-tool",
   "dependencies": {
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",

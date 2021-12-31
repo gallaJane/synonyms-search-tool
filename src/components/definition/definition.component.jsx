@@ -6,8 +6,8 @@ import {
     Accordion, AccordionSummary, AccordionDetails
 } from '@mui/material'
 import {
-    ArrowBack as BackIcon,
-    BookmarkBorder as BookmarkIcon,
+    ArrowBack as BackIcon, 
+    // BookmarkBorder as BookmarkIcon,
     VolumeUp as VolumeUpIcon,
     ExpandMore
 } from '@mui/icons-material'
@@ -38,7 +38,6 @@ const Definition = () => {
             try {
                 const resp = await axios.get(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`);
                 setDefinitions(resp.data)
-                console.log(resp.data)
                 setLoading(false)
                 //check if audio is available
                 const phonetics = resp.data[0].phonetics
@@ -100,9 +99,9 @@ const Definition = () => {
                 <IconButton onClick={history.goBack}>
                     <BackIcon sx={{ color: 'black' }} />
                 </IconButton>
-                <IconButton>
+                {/* <IconButton>
                     <BookmarkIcon sx={{ color: 'black' }} />
-                </IconButton>
+                </IconButton> */}
             </Stack>
 
             <Stack direction="row" alignItems="center" justifyContent="space-between" sx={{
@@ -151,7 +150,7 @@ const Definition = () => {
                                 //      </Box>
                                 //  </Typography>
 
-                                <Accordion square expanded={expanded === `panel_${idx}`} onChange={handleChange(`panel_${idx}`)}>
+                                <Accordion style={{ borderRadius:5, boxShadow: 'rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px'}} square expanded={expanded === `panel_${idx}`} onChange={handleChange(`panel_${idx}`)}>
                                     <AccordionSummary expandIcon={<ExpandMore />} aria-controls={`panel_${idx}d-content`} id={`panel_${idx}d-header`}>
                                         <div style={{
                                             display: 'flex',

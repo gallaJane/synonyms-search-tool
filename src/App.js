@@ -7,7 +7,7 @@ import { useState } from "react";
 import React from 'react'
 
 import theme from "./theme"
-import { BrowserRouter as Router, Route} from 'react-router-dom'
+import { Route, Switch as SwitchRoute} from 'react-router-dom'
 
 import Home from './components/home/home.component'
 import Definition from './components/definition/definition.component'
@@ -43,8 +43,8 @@ const App = () => {
   >
     <ThemeProvider theme= {theme}>
       <CssBaseline />
-      <Grid container>
-        <Grid item xs={12} sx={{ p:2 }}>
+      <Grid container sx={{ p:2 }} justifyContent="center">
+        <Grid item xs={12} sm={8} md ={5} lg={3} >
 
         <div
           style={{ position: "absolute", top: 0, right: 15, paddingTop: 10 }}
@@ -57,12 +57,12 @@ const App = () => {
         </div>
 
 
-      <Router>
+      <SwitchRoute>
         <Route exact path='/' component={Home} />
         <Route path='/search/:word' component={Definition} />
         <Route path='/bookmarks' component={Bookmarks} />
         <Route path='/new' component={NewWord} />
-      </Router>
+      </SwitchRoute>
       </Grid>
       </Grid>
     </ThemeProvider>
