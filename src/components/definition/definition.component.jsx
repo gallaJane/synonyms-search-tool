@@ -3,11 +3,10 @@ import { useState, useEffect, Fragment } from 'react'
 import {
     Stack, Box, Typography, Button, IconButton,
     Divider, CircularProgress, useTheme, Chip,
-    Accordion, AccordionSummary, AccordionDetails, Modal
+    Accordion, AccordionSummary, AccordionDetails
 } from '@mui/material'
 import {
     ArrowBack as BackIcon,
-    Bookmark as BookmarkedIcon,
     BookmarkBorder as BookmarkIcon,
     VolumeUp as VolumeUpIcon,
     ExpandMore
@@ -54,7 +53,7 @@ const Definition = () => {
         }
 
         fetchDefinition();
-    }, [])
+    }, [word])
 
 
     const handleClick = (e) => {

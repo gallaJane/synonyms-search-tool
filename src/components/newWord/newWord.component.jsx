@@ -2,7 +2,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import FieldArray from '../fieldArray/fieldArray.component';
 import { Button, Box, useTheme, Typography } from '@mui/material'
-import { useParams, useHistory } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 
 
 import "./newWord.styles.css";
@@ -30,7 +30,6 @@ const NewWord = () => {
         handleSubmit,
         getValues,
         errors,
-         reset,
         setValue
       } = useForm({
         defaultValues

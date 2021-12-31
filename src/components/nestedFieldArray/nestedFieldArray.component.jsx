@@ -3,7 +3,7 @@ import { useFieldArray } from "react-hook-form";
 import { Box, IconButton } from '@mui/material'
 import { Add as AddIcon, Clear as DeleteIcon } from '@mui/icons-material'
 
-export default ({ nestIndex, control, register }) => {
+const Definitions= ({ nestIndex, control, register }) => {
   const { fields, remove, append } = useFieldArray({
     control,
     name: `meaning.${nestIndex}.definitions`
@@ -61,3 +61,5 @@ export default ({ nestIndex, control, register }) => {
     </div>
   );
 };
+
+export default Definitions;

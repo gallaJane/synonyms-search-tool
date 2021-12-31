@@ -7,7 +7,7 @@ import { Add as AddIcon, Clear as DeleteIcon } from '@mui/icons-material'
 
 
 export default function Fields({ control, register, setValue, getValues }) {
-  const { fields, append, remove, prepend } = useFieldArray({
+  const { fields, remove } = useFieldArray({
     control,
     name: "meaning"
   });
