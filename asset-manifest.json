@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/synonyms-search-tool/static/css/main.fa890186.css",
+    "main.js": "/synonyms-search-tool/static/js/main.8fdb24ea.js",
+    "static/js/787.5544f068.chunk.js": "/synonyms-search-tool/static/js/787.5544f068.chunk.js",
+    "index.html": "/synonyms-search-tool/index.html",
+    "main.fa890186.css.map": "/synonyms-search-tool/static/css/main.fa890186.css.map",
+    "main.8fdb24ea.js.map": "/synonyms-search-tool/static/js/main.8fdb24ea.js.map",
+    "787.5544f068.chunk.js.map": "/synonyms-search-tool/static/js/787.5544f068.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fa890186.css",
+    "static/js/main.8fdb24ea.js"
+  ]
+}
