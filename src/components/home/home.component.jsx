@@ -29,7 +29,7 @@ const Home = () => {
                     mt: 3,
                     mb: 1
                 }} variant ="h4"> 4 DefSyn </Typography>
-            <Typography color="GrayText"> Find words and bookmark for later</Typography>
+            <Typography color="GrayText"> Find words and their synonyms</Typography>
 <Box sx={{ width: '360px' }}>
     <form onSubmit={handleSubmit}>
             <FilledInput 

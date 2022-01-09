@@ -47,7 +47,7 @@ const NewWord = () => {
         <Button type="submit" variant="contained" sx={{ textTransform: 'capitalize', mt: 2, color: 'white' }}>Save</Button>
         </div>
         </div>
-        <Typography variant="body2" color="GrayText" sx={{ mb: 3 }}> The following example demonstrate the ability of building nested array
+        <Typography variant="body2" color="GrayText" sx={{ mb: 3 }}>Here you can define a new word with it's synonyms.
           fields.</Typography>
           <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
         <input {...register(`name`, {
